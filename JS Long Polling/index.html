@@ -6,29 +6,29 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script>
 		/************************************************************************************
-		* Real-Time alternative/solution - Long Polling using Naked JavaScript							*
-		* Proposed as Real-Time alternative/solution @ Intelligent Hosting Pte Ltd			    *
-		* By Mr Hery Mid May 2018															                              *
-		*																					                                          *
-		* Declaration by Mr Hery:															                              *
+		* Real-Time alternative/solution - Long Polling using Naked JavaScript												*
+		* Proposed as Real-Time alternative/solution @ Intelligent Hosting Pte Ltd			*
+		* By Mr Hery Mid May 2018															*
+		*																					*
+		* Declaration by Mr Hery:															*
 		* Below script achieve data real-time as we keep the connection connected even the	*
-		* request has timeout. This method statisfy my desireness but not support for		    *
-		* media streaming etc.																                              *
-		*																					                                          *
-		* This method has some problem as the script keep connect even after timeout,		    *
-		* the requested server will be has a big load on it's RAM Memory. But it maybe		  *
-		* because of my simple PHP script.													                        *
-		*																					                                          *
+		* request has timeout. This method statisfy my desireness but not support for		*
+		* media streaming etc.																*
+		*																					*
+		* This method has some problem as the script keep connect even after timeout,		*
+		* the requested server will be has a big load on it's RAM Memory. But it maybe		*
+		* because of my simple PHP script.													*
+		*																					*
 		* My suggestion base on my experience, Socket Development has a lot better even for	*
 		* media streaming, file streaming, even real-time video streaming as it don't take	*
-		* RAM Memory too much and not too load the server.									                *
-		*																					                                          *
+		* RAM Memory too much and not too load the server.									*
+		*																					*
 		* For real-time video call/conference, WebRTC has a great API that can achive these	*
 		* purpose wisely. I lltry to put as much solution/alternative I could in my github.	*
-		*																					                                          *
-		* Mr Hery																			                                      *
-		* http://iamhery.com																                                *
-		* heryintelt@gmail.com																                              *
+		*																					*
+		* Mr Hery																			*
+		* http://iamhery.com																*
+		* heryintelt@gmail.com																*
 		************************************************************************************/
 		var c = "";		//Declare empty variable to record response
 		
